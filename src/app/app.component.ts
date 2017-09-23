@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'IMDB Movie Ratings';
+  itemselected='addmovie';
+
+  onNavigation(feature:string) {
+
+    console.log(feature);
+
+    this.itemselected=feature;
+
+  }
 }
